@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{79407184-D31F-4D79-AF0B-32C7A6E71747}</ProjectGuid>
+    <RootNamespace>wanui_res</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>../../obj/wanui_res/$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>../../obj/wanui_res/$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../bin/wanui_res.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../bin/wanui_res.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="res\app_top_center.png" />
+    <Image Include="res\app_top_left.png" />
+    <Image Include="res\app_top_right.png" />
+    <Image Include="res\button_back.png" />
+    <Image Include="res\button_back_hover.png" />
+    <Image Include="res\button_back_pressed.png" />
+    <Image Include="res\button_forward.png" />
+    <Image Include="res\button_forward_hover.png" />
+    <Image Include="res\button_forward_pressed.png" />
+    <Image Include="res\button_reload.png" />
+    <Image Include="res\button_reload_hover.png" />
+    <Image Include="res\button_reload_pressed.png" />
+    <Image Include="res\close.png" />
+    <Image Include="res\close_h.png" />
+    <Image Include="res\close_p.png" />
+    <Image Include="res\close_sa.png" />
+    <Image Include="res\close_sa_h.png" />
+    <Image Include="res\close_sa_p.png" />
+    <Image Include="res\content_bottom_center.png" />
+    <Image Include="res\content_bottom_left_corner.png" />
+    <Image Include="res\content_bottom_right_corner.png" />
+    <Image Include="res\content_left_side.png" />
+    <Image Include="res\content_right_side.png" />
+    <Image Include="res\content_top_center.png" />
+    <Image Include="res\content_top_right_corner.png" />
+    <Image Include="res\content_top_right_corner_mask.png" />
+    <Image Include="res\default_favicon.png" />
+    <Image Include="res\frame_default.png" />
+    <Image Include="res\frame_default_inactive.png" />
+    <Image Include="res\input_good.png" />
+    <Image Include="res\maximize.png" />
+    <Image Include="res\maximize_h.png" />
+    <Image Include="res\maximize_p.png" />
+    <Image Include="res\menu_droparrow.png" />
+    <Image Include="res\minimize.png" />
+    <Image Include="res\minimize_h.png" />
+    <Image Include="res\minimize_p.png" />
+    <Image Include="res\restore.png" />
+    <Image Include="res\restore_h.png" />
+    <Image Include="res\restore_p.png" />
+    <Image Include="res\textbutton_bl_h.png" />
+    <Image Include="res\textbutton_bl_p.png" />
+    <Image Include="res\textbutton_br_h.png" />
+    <Image Include="res\textbutton_br_p.png" />
+    <Image Include="res\textbutton_b_h.png" />
+    <Image Include="res\textbutton_b_p.png" />
+    <Image Include="res\textbutton_c_h.png" />
+    <Image Include="res\textbutton_c_p.png" />
+    <Image Include="res\textbutton_l_h.png" />
+    <Image Include="res\textbutton_l_p.png" />
+    <Image Include="res\textbutton_r_h.png" />
+    <Image Include="res\textbutton_r_p.png" />
+    <Image Include="res\textbutton_tl_h.png" />
+    <Image Include="res\textbutton_tl_p.png" />
+    <Image Include="res\textbutton_tr_h.png" />
+    <Image Include="res\textbutton_tr_p.png" />
+    <Image Include="res\textbutton_t_h.png" />
+    <Image Include="res\textbutton_t_p.png" />
+    <Image Include="res\throbber.png" />
+    <Image Include="res\tutorial_widget_background.png" />
+    <Image Include="res\window_bottom_center.png" />
+    <Image Include="res\window_bottom_left_corner.png" />
+    <Image Include="res\window_bottom_right_corner.png" />
+    <Image Include="res\window_left_side.png" />
+    <Image Include="res\window_right_side.png" />
+    <Image Include="res\window_top_center.png" />
+    <Image Include="res\window_top_left_corner.png" />
+    <Image Include="res\window_top_right_corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wanui_res.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
