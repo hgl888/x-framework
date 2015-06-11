@@ -70,7 +70,7 @@ void GanttMain::Run()
 
     view::Widget* window = view::Widget::CreateWindowWithBounds(this, gfx::Rect());
     ui::CenterAndSizeWindow(NULL, window->GetNativeWindow(),
-        gfx::Size(800, 400), false);
+        gfx::Size(600, 400), false);
 
     window->Show();
     view::AcceleratorHandler accelerator_handler;

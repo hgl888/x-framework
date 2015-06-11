@@ -53,7 +53,7 @@ HICON GanttViewDelegate::GetDefaultWindowIcon() const
 {
     return IconUtil::CreateHICONFromSkBitmap(
         ui::ResourceBundle::GetSharedInstance().GetImageNamed(
-        IDR_PRODUCT_LOGO_16));
+        IDR_PRODUCT_LOGO_32));
 }
 
 int GanttViewDelegate::GetDispositionForEvent(int event_flags)
