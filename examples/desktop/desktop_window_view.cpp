@@ -132,7 +132,7 @@ namespace view
             // window, so we need to construct a NativeWidgetWin by hand.
             // TODO(beng): Replace this with NativeWindow::CreateNativeRootWindow().
             params.native_widget = new NativeWidgetWin(window);
-            params.bounds = gfx::Rect(20, 20, 1920, 1200);
+            params.bounds = gfx::Rect(20, 20, 1024, 768);
             
             window->Init(params);
             window->Show();
